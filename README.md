@@ -1,3 +1,10 @@
+<div align="center">
+  <h1> RMFAT </h1>
+  <h2>Recurrent Multi-scale Feature Atmospheric Turbulence Mitigator</h2>
+</div>
+
+<p align="center">Zhiming Liu, Nantheera Anantrasirichai</p>
+
 # MyDataset
 
 This is a public dataset for turbulence migitation tasks, containing two subsets: **static** and **dynamic**.
