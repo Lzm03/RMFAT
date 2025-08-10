@@ -5,11 +5,31 @@
 
 <p align="center">Zhiming Liu, Nantheera Anantrasirichai</p>
 
-# MyDataset
+
+## 📑 Contents
+- [Environment Installation](#environment-installation)
+- [My Dataset](#Datasets-prepare)
+- [Training](#Training)
+- [Performance Evaluation](#Evaluation)
+- [Useful Resources](#links)
+- [Citation](#Citation)
+- [License](#license)
+
+
+<h2 id="environment-installation">🔨 Environment Installation</h2>
+
+```shell
+conda create -n RMFAT python=3.11
+conda activate RMFAT
+cd code
+pip install -r requirements.txt
+```
+
+<h2 id="Datasets-prepare">🧩 My Datasets</h2>
 
 This is a public dataset for turbulence migitation tasks, containing two subsets: **static** and **dynamic**.
 
-## 📦 Download
+### 📦 Download
 
 You can download each dataset subset as a ZIP file below:
 
