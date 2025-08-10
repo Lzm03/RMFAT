@@ -9,6 +9,8 @@
 ## 📑 Contents
 - [Environment Installation](#environment-installation)
 - [My Dataset](#Datasets-prepare)
+- [Training](#Training)
+- [Performance Evaluation](#Performance)
 
 
 <h2 id="environment-installation">🔨 Environment Installation</h2>
@@ -43,6 +45,12 @@ For the training on static scene data, run the following:
 python recursive_train.py.py --train_path "/path/to/static/train/data" --val_path "/path/to/static/val/data" --batch_size 1 --patch_size 256 --num_frames 10 --tmt_dims 16 --log_path "/path/to/save/logs/dynamic" --run_name "train_dynamic" --resume_ckpt "/path/to/dynamic/checkpoint.pth"
 ```
 
-<h2 id="Single">Single Video Inference</h2>
+<h2 id="Performance">🚀 Performance Evaluation</h2>
+For the single video inference, run the following:
+
+```
+python restore_video.py --video_path /path/to/video.mp4 --output_dir /path/to/output --restoration_ckpt /path/to/model.pth --tmt_dim 32 --warp_mode enc --n_frames 3 --save_raw
+```
+
 
 
