@@ -9,11 +9,6 @@
 ## 📑 Contents
 - [Environment Installation](#environment-installation)
 - [My Dataset](#Datasets-prepare)
-- [Training](#Training)
-- [Performance Evaluation](#Evaluation)
-- [Useful Resources](#links)
-- [Citation](#Citation)
-- [License](#license)
 
 
 <h2 id="environment-installation">🔨 Environment Installation</h2>
