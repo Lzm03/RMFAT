@@ -1,0 +1,351 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-67835289-3"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-67835289-3');
+</script>
+
+<link rel="stylesheet" href="css/app.css">
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<script src="js/video_comparison.js"></script>
+<script src="js/app.js"></script>
+
+<!-- ======================================================================= -->
+<script src="http://www.google.com/jsapi" type="text/javascript"></script>
+<script type="text/javascript">google.load("jquery", "1.3.2");</script>
+<style type="text/css">
+  body {
+    /* font-family: "Titillium Web","HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; */
+    font-family: "Avenir", sans-serif;
+    font-weight:400;
+    font-size:18px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1100px;
+  }
+
+  h1 {
+    font-weight:300;
+  }
+
+  .column {
+    float: left;
+    /* width: 50%; */
+  }
+
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  .disclaimerbox {
+    background-color: #eee;
+    border: 1px solid #eeeeee;
+    border-radius: 10px ;
+    -moz-border-radius: 10px ;
+    -webkit-border-radius: 10px ;
+    padding: 20px;
+  }
+
+  video.header-vid {
+    height: 140px;
+    border: 1px solid black;
+    border-radius: 10px ;
+    -moz-border-radius: 10px ;
+    -webkit-border-radius: 10px ;
+  }
+
+  img.header-img {
+    height: 140px;
+    border: 1px solid black;
+    border-radius: 10px ;
+    -moz-border-radius: 10px ;
+    -webkit-border-radius: 10px ;
+  }
+
+  img.rounded {
+    border: 1px solid #eeeeee;
+    border-radius: 10px ;
+    -moz-border-radius: 10px ;
+    -webkit-border-radius: 10px ;
+  }
+
+  a:link,a:visited
+  {
+    color: #1367a7;
+    text-decoration: none;
+  }
+  a:hover {
+    color: #208799;
+  }
+
+  td.dl-link {
+    height: 160px;
+    text-align: center;
+    font-size: 22px;
+  }
+
+  .layered-paper-big { /* modified from: http://css-tricks.com/snippets/css/layered-paper/ */
+    box-shadow:
+            0px 0px 1px 1px rgba(0,0,0,0.35), /* The top layer shadow */
+            5px 5px 0 0px #fff, /* The second layer */
+            5px 5px 1px 1px rgba(0,0,0,0.35), /* The second layer shadow */
+            10px 10px 0 0px #fff, /* The third layer */
+            10px 10px 1px 1px rgba(0,0,0,0.35), /* The third layer shadow */
+            15px 15px 0 0px #fff, /* The fourth layer */
+            15px 15px 1px 1px rgba(0,0,0,0.35), /* The fourth layer shadow */
+            20px 20px 0 0px #fff, /* The fifth layer */
+            20px 20px 1px 1px rgba(0,0,0,0.35), /* The fifth layer shadow */
+            25px 25px 0 0px #fff, /* The fifth layer */
+            25px 25px 1px 1px rgba(0,0,0,0.35); /* The fifth layer shadow */
+    margin-left: 10px;
+    margin-right: 45px;
+  }
+
+
+  .layered-paper { /* modified from: http://css-tricks.com/snippets/css/layered-paper/ */
+    box-shadow:
+            0px 0px 1px 1px rgba(0,0,0,0.35), /* The top layer shadow */
+            5px 5px 0 0px #fff, /* The second layer */
+            5px 5px 1px 1px rgba(0,0,0,0.35), /* The second layer shadow */
+            10px 10px 0 0px #fff, /* The third layer */
+            10px 10px 1px 1px rgba(0,0,0,0.35); /* The third layer shadow */
+    margin-top: 5px;
+    margin-left: 10px;
+    margin-right: 30px;
+    margin-bottom: 5px;
+  }
+
+  .vert-cent {
+    position: relative;
+      top: 50%;
+      transform: translateY(-50%);
+  }
+
+  hr
+  {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+  }
+
+  #authors td {
+    padding-bottom:5px;
+    padding-top:30px;
+  }
+</style>
+
+
+<html>
+  <head>
+
+	<title>MambaTM</title>
+	<meta property="og:title" content="MambaTM" />
+	<meta property="og:image" content="" />
+	<meta property="og:image:width" content="3000" />
+	<meta property="og:image:height" content="800" />
+  </head>
+
+  <body>
+    <br><br><br><br>
+          <center>
+          	<span style="font-size:38px">RMFAT: Recurrent Multi-scale Feature Atmospheric Turbulence Mitigator</span>
+            <br><br>
+		  <table align=center width=800px>
+	  			  <tr>
+	  	        <td align=center width=100px>
+	  					  <center>
+	  						<span style="font-size:16px"><a href="https://github.com/Lzm03">Zhiming Liu</a></span>
+		  		  		</center>
+		  		  	</td>
+	  	        <td align=center width=100px>
+	  					  <center>
+	  						<span style="font-size:16px"><a href="https://pui-nantheera.github.io/">Nantheera Anantrasirichai</a></span>
+		  		  		</center>
+		  		  	</td>
+			  </table>
+        <br>
+	  		  <table align=center width=550px style="font-size:20px;">
+	  			  <tr>
+              <td align=center width=100px>
+              <center>
+                <span><a href="https://arxiv.org/abs/2508.11409"> [Paper]</a></span>
+              </center>
+              </td>
+
+              <td align=center width=100px>
+              <center>
+                <span><a href="https://github.com/Lzm03/RMFAT"> [Code]</a></span>
+              </center>
+              </td>
+
+              <td align=center width=100px>
+                <center>
+                  <span><a href="https://drive.google.com/file/d/1JZCslKDHqjTHnUowgYlFja_ewejMtZfJ/view?usp=drive_link"> [Syn-static]</a></span>
+                </center>
+              </td>
+
+              <td align=center width=100px>
+                <center>
+                  <span><a href="https://drive.google.com/file/d/1RZeK-e-MfPt56feIUsowtr_oKVLFqH3J/view?usp=drive_link"> [Syn-dynamic]</a></span>
+                </center>
+              </td>
+            </tr>
+			  </table>
+        <!-- ======================================================================= <br>
+        <span style="font-size:20px">under review</span> -->
+      </center>
+
+  		  <br>
+  		  <table align=center width=1100px>
+  			  <tr>
+            <td width=1050px>
+    					<center>
+    	          <a href="./img/architecture.png"><img src = "./img/architecture.png" width="90%"></img></href></a><br>
+  					  </center>
+            </td>
+          </tr>
+  		  </table>
+      	<br><br>
+
+		  <hr>
+
+
+      <center>
+        <h1>Abstract</h1>
+        <p> 
+            Atmospheric turbulence severely degrades video quality by
+            introducing distortions such as geometric warping, blur, and
+            temporal flickering, posing significant challenges to both vi-
+            sual clarity and temporal consistency. Current state-of-the-art
+            methods are based on transformer, 3D architectures and re-
+            quire multi-frame input, but their large computational cost
+            and memory usage limit real-time deployment, especially
+            in resource-constrained scenarios. In this work, we propose
+            RMFAT — Recurrent Multi-scale Feature Atmospheric Tur-
+            bulence Mitigator designed for efficient and temporally con-
+            sistent video restoration under AT conditions. RMFAT adopts
+            a lightweight recurrent framework that restores each frame
+            using only two inputs at a time, significantly reducing tem-
+            poral window size and computational burden. It further inte-
+            grates multi-scale feature encoding and decoding with tem-
+            poral warping modules at both encoder and decoder stages to
+            enhance spatial detail and temporal coherence. Extensive ex-
+            periments conducted on synthetic and real-world atmospheric
+            turbulence datasets demonstrate that RMFAT not only outper-
+            forms existing methods in terms of clarity restoration (with
+            nearly a 9% improvement in SSIM) but also achieves sig-
+            nificantly improved inference speed (achieving a more than
+            fourfold reduction), making it particularly suitable for real-
+            time atmospheric turbulence suppression tasks.
+        <br><br>
+		  </table>
+
+		  <hr>
+
+      <center>
+        <h1>Video Results</h1>
+        <p>Videos are from the <a href="https://uob-my.sharepoint.com/:f:/g/personal/eexna_bristol_ac_uk/EnEq5HdW_ThImbQmKNE8dBoBy3CvXy_yqE4023_GbSoJBQ?e=u9TWfU"> data_CLEAR </a>, all subjects give the consent to show their images.</p> 
+        <p>If videos are not played correctly, please consider to use Chrome or download them</p>
+        <div class="video-compare-container" id="G00380_compare_videoDiv">
+          <video class="video" id="G00380_compare_video" loop playsinline autoPlay muted onplay="resizeAndPlay(this)">
+            <source src="./Example/car.mp4" type="video/mp4">
+          </video>
+          <canvas height=0 class="videoMerge" id="G00380_compare_videoMerge"></canvas>
+        </div>
+        <br>
+        <div class="video-compare-container" id="G00071_compare_videoDiv">
+          <video class="video" id="G00071_compare_video" loop playsinline autoPlay muted onplay="resizeAndPlay(this)">
+            <source src="./Example/man.mp4" type="video/mp4">
+          </video>
+          <canvas height=0 class="videoMerge" id="G00071_compare_videoMerge"></canvas>
+        </div>
+        <br>
+
+        <div class="video-compare-container" id="URG_MambaTM_videoDiv">
+          <video class="video" id="URG_MambaTM_video" loop playsinline autoPlay muted onplay="resizeAndPlay(this)">
+            <source src="./Example/output.mp4" type="video/mp4">
+          </video>
+          <canvas height=0 class="videoMerge" id="URG_MambaTM_videoMerge"></canvas>
+        </div>
+        <br>
+
+        <p> Compare with <b>DATUM (CVPR 2024)</b> and <b>Turb-Seg-Res (CVPR 2024)</b></p>
+        <div class="video-compare-container" id="URG_DATUM_videoDiv">
+          <video class="video" id="URG_DATUM_video" loop playsinline autoPlay muted onplay="resizeAndPlay(this)">
+            <source src="videos/URG_DATUM.mp4" type="video/mp4">
+          </video>
+          <canvas height=0 class="videoMerge" id="URG_DATUM_videoMerge"></canvas>
+        </div>
+        <br>
+        <div class="video-compare-container" id="URG_TSR_videoDiv">
+          <video class="video" id="URG_TSR_video" loop playsinline autoPlay muted onplay="resizeAndPlay(this)">
+            <source src="videos/URG_TSR.mp4" type="video/mp4">
+          </video>
+          <canvas height=0 class="videoMerge" id="URG_TSR_videoMerge"></canvas>
+        </div>
+        <br>
+      <p style="font-size: 24px;"> The LPD-based re-degraded results </p>
+      <p> restoration performance </p>
+        <div class="video-compare-container" id="G00071_input_restore_videoDiv">
+          <video class="video" id="G00071_input_restore_video" loop playsinline autoPlay muted onplay="resizeAndPlay(this)">
+            <source src="videos/input_restore.mp4" type="video/mp4">
+          </video>
+          <canvas height=0 class="videoMerge" id="G00071_input_restore_videoMerge"></canvas>
+        </div>
+        <br>
+        <p> Re-degradation based on the estimated LPD with restored video above </p>
+        <div class="video-compare-container" id="G00071_input_returb_videoDiv">
+          <video class="video" id="G00071_input_returb_video" loop playsinline autoPlay muted onplay="resizeAndPlay(this)">
+            <source src="videos/input_returb.mp4" type="video/mp4">
+          </video>
+          <canvas height=0 class="videoMerge" id="G00071_input_returb_videoMerge"></canvas>
+        </div>
+        <br>
+        <br>
+      </center>
+
+      <hr>
+
+      <center>
+      
+      <hr>
+      <h1> visual comparsion on real-world images</h1>
+      <table align=center width=1100px>
+        <tr>
+          <td width=1050px>
+            <center>
+              <a href="./img/real.png"><img src = "./img/real.png" width="70%"></img></href></a><br>
+            </center>
+          </td>
+        </tr>
+    
+        <tr>
+          <td width=1050px>
+            <center>
+              <a href="./img/easytohard.png"><img src = "./img/easytohard.png" width="70%"></img></href></a><br>
+            </center>
+          </td>
+        </tr>
+      </table>
+		  
+
+			</left>
+		</td>
+			 </tr>
+		</table>
+
+		<br><br>
+
+
+</body>
+</html>
