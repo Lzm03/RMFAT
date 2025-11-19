@@ -252,8 +252,8 @@ def main():
     if args.eval_only:
         model.eval()
         psnr_list, ssim_list, lpips_list = [], [], []
-        total_restore_time = 0  # 新增
-        frame_count = 0         # 新增
+        total_restore_time = 0  
+        frame_count = 0         
 
         with torch.no_grad():
             for val_data_idx, val_data in enumerate(tqdm(val_loader)):
@@ -265,9 +265,9 @@ def main():
 
                     input_cat = torch.stack([O_prev, I_t], dim=0).unsqueeze(0).permute(0, 2, 1, 3, 4)
 
-                    start = time.time()  # ⏱️ 计时开始
+                    start = time.time()  
                     output, _ = model(input_cat)
-                    end = time.time()    # ⏱️ 计时结束
+                    end = time.time()   
 
                     total_restore_time += end - start
                     frame_count += 1
