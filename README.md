@@ -1,6 +1,6 @@
 <div align="center">
   <h1> RMFAT </h1>
-  <h2>Recurrent Multi-scale Feature Atmospheric Turbulence Mitigator</h2>
+  <h2>Recurrent Multi-scale Feature Atmospheric Turbulence Mitigator [AAAI 2026]</h2>
 </div>
 
 <p align="center">Zhiming Liu, Nantheera Anantrasirichai</p>
@@ -52,5 +52,15 @@ For the single video inference, run the following:
 python restore_video.py --video_path /path/to/video.mp4 --output_dir /path/to/output --restoration_ckpt /path/to/model.pth --tmt_dim 32 --warp_mode enc --n_frames 3 --save_raw
 ```
 
+<h2 id="Citation">Citation</h2>
+
+```shell
+@inproceedings{liu2026rmfat,
+  title     = {{RMFAT}: Recurrent Multi-scale Feature Atmospheric Turbulence Mitigator},
+  author    = {Liu, Zhiming and Anantrasirichai, Nantheera},
+  booktitle = {Proceedings of the AAAI Conference on Artificial Intelligence},
+  year      = {2026},
+}
+```
 
 
