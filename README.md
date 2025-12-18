@@ -1,6 +1,6 @@
 <div align="center">
-  <h1> RMFAT </h1>
-  <h2>Recurrent Multi-scale Feature Atmospheric Turbulence Mitigator [AAAI 2026]</h2>
+  <h1> RMFAT  [AAAI 2026]</h1>
+  <h2>Recurrent Multi-scale Feature Atmospheric Turbulence Mitigator </h2>
 </div>
 
 <p align="center">Zhiming Liu, Nantheera Anantrasirichai</p>
